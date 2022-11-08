@@ -24,3 +24,13 @@ for (let i = 0; i < liItemRef.length; i += 1) {
   console.log(`Category: ${liItemRef[i].firstElementChild.textContent}`);
   console.log(`Elements: ${liItemRef[i].querySelector("ul").children.length}`);
 }
+
+// Рішення до якого хотілось би дійти самому хех)
+
+// const categoriesItems = document.querySelectorAll("#categories > .item");
+// console.log(`Number of categories: ${categoriesItems.length}`);
+
+// categoriesItems.forEach((element) => {
+//   console.log(`Category: ${element.querySelector("h2").textContent}`);
+//   console.log(`Elements: ${element.querySelectorAll("li").length}`);
+// });
