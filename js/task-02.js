@@ -15,12 +15,13 @@ const ingredients = [
 ];
 
 const ulRef = document.querySelector("#ingredients");
+const liArray = [];
 
-ingredients.forEach((name) => {
-  const liRef = document.createElement("li");
-  liRef.textContent = name;
-  liRef.classList.add("item");
-  ulRef.append(liRef);
+ingredients.forEach((element) => {
+  const li = document.createElement("li");
+  li.textContent = element;
+  li.classList.add("item");
+  liArray.push(li);
 });
 
-// Не розумію, це вставка за одну операцію? Чи це вставляється на кожній ітерації?
+ulRef.append(...liArray);
