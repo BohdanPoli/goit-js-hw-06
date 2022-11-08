@@ -22,3 +22,5 @@ ingredients.forEach((name) => {
   liRef.classList.add("item");
   ulRef.append(liRef);
 });
+
+// Не розумію, це вставка за одну операцію? Чи це вставляється на кожній ітерації?
