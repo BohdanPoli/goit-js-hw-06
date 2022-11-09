@@ -17,3 +17,15 @@ const images = [
     alt: "Group of Horses Running",
   },
 ];
+
+const ulRef = document.querySelector(".gallery");
+const markup = [];
+
+images.forEach((element) => {
+  const part = `<li class='gallery-item'><img src='${element.url}' alt='${element.alt}' /></li>`;
+  markup.push(part);
+});
+
+const gallery = markup.join("");
+
+ulRef.insertAdjacentHTML("afterbegin", gallery);
