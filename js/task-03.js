@@ -29,3 +29,16 @@ images.forEach((element) => {
 const gallery = markup.join("");
 
 ulRef.insertAdjacentHTML("afterbegin", gallery);
+
+// Рішення до якого хотілось би дійти самому
+
+// const ulRef = document.querySelector(".gallery");
+
+// const liGallery = images
+//   .map(
+//     (element) =>
+//       `<li class='gallery-item'><img src='${element.url}' alt='${element.alt}' width="320"/></li>`
+//   )
+//   .join();
+
+// ulRef.insertAdjacentHTML("afterbegin", liGallery);
