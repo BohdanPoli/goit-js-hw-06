@@ -28,6 +28,8 @@ function onSubmitForm(event) {
     resultData[name] = value;
     console.log(resultData);
   });
+
+  event.currentTarget.reset();
 }
 
 formRef.addEventListener("submit", onSubmitForm);
