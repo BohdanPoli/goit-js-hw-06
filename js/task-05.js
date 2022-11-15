@@ -9,7 +9,7 @@ const ref = {
   span: document.querySelector("#name-output"),
 };
 
-function onInputText() {
+function onInputText(event) {
   if (event.currentTarget.value === "") {
     ref.span.textContent = "Anonymous";
   } else {

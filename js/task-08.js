@@ -15,6 +15,7 @@ function onSubmitForm(event) {
 
   if (emailValue === "" || passwordValue === "") {
     window.alert("Попередженням про те, що всі поля повинні бути заповнені.");
+    return;
   }
 
   //   console.log(event);
@@ -30,8 +31,7 @@ function onSubmitForm(event) {
   });
 
   event.currentTarget.reset();
+  resultData = {};
 }
 
 formRef.addEventListener("submit", onSubmitForm);
-
-// Потрібна допомога з цим завданням

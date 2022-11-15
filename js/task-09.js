@@ -26,8 +26,9 @@ const randomColor = function getRandomHexColor() {
 };
 
 function onClickButton() {
-  ref.span.textContent = randomColor();
-  ref.body.style.backgroundColor = randomColor();
+  const newColor = randomColor();
+  ref.body.style.backgroundColor = newColor;
+  ref.span.textContent = newColor;
 }
 
 onClickButton();
