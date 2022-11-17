@@ -48,10 +48,10 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
     const div = `<div class='div-box' style="background-color:${getRandomHexColor()}; width:${width}px; height:${height}px;"></div>`;
     arr.push(div);
-    markup = arr.join("");
     height += 10;
     width += 10;
   }
+  markup = arr.join("");
   return markup;
 }
 
